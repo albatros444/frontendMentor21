@@ -1,2 +1,158 @@
 @import "globals";
 @import "footer";
+
+.background {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(228, 71, 99, 98%);
+}
+.card {
+  width: 730px;
+  height: 840px;
+  margin-top: 62px;
+  margin-bottom: 86px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 10px hsl(240, 7%, 92%);
+  &__notificationsCount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .notifCount {
+      display: flex;
+      align-items: center;
+      h2 {
+        margin-bottom: 4px;
+      }
+      .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 31px;
+        height: 24px;
+        margin-left: 15px;
+        padding-bottom: 2px;
+        border-radius: 5px;
+        background-color: hsl(219, 85%, 26%);
+        color: white;
+      }
+    }
+    button {
+      display: inline-block;
+      padding: 0;
+      border: none;
+      outline: inherit;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background: none;
+      color: hsl(219, 12%, 42%);
+    }
+  }
+  &__notification {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 18px;
+    // background-color: hsl(210, 60%, 98%);
+    background-color: white;
+    p {
+      ////////all margin only inside notification
+      margin-bottom: 0;
+      color: hsl(219, 12%, 42%);
+    }
+    .avatar {
+      height: 45px;
+      margin-right: 20px;
+    }
+    &__notifData {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .whatHappenedBox {
+        .whatHappened {
+          .name {
+            margin-right: 3px;
+            font-weight: bold;
+            color: hsl(224, 21%, 14%);
+          }
+          .linkToClub {
+            color: hsl(219, 95%, 30%);
+            font-weight: bold;
+          }
+          .linkToMessage {
+            color: hsl(219, 12%, 42%);
+            font-weight: bold;
+          }
+          &::after {
+            content: "";
+            // display: inline-block;
+            display: none;
+            width: 8px;
+            height: 8px;
+            margin-left: 5px;
+            margin-bottom: 1px;
+            border-radius: 8px;
+            background-color: hsl(1, 90%, 64%);
+          }
+          .read {
+            background-color: blue;
+          }
+        }
+        .whenHappened {
+          color: hsl(219, 14%, 63%);
+        }
+      }
+      .linkImage {
+        height: 45px;
+      }
+
+      .privateMessage {
+        height: 95px;
+        padding: 21px;
+        padding-top: 15px;
+        border: solid 1px hsl(205, 33%, 90%);
+      }
+    }
+  }
+}
+// .read {
+//   background-color: white;
+//   .whatHappenedBox {
+//     .whatHappened {
+//       &::after {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+.new {
+  background-color: hsl(210, 60%, 98%);
+  //   background-color: green;
+  .whatHappenedBox {
+    .whatHappened {
+      &::after {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+//////////////////
+// Red: hsl(1, 90%, 64%)
+// Blue: hsl(219, 85%, 26%)
+
+// ### Neutral
+
+// - White: hsl(0, 0%, 100%)
+// - Very light grayish blue: hsl(210, 60%, 98%)
+// - Light grayish blue1: hsl(211, 68%, 94%)
+// - Light grayish blue2: hsl(205, 33%, 90%)
+// - Grayish blue: hsl(219, 14%, 63%)
+// - Dark grayish blue: hsl(219, 12%, 42%)
+// - Very dark blue: hsl(224, 21%, 14%)
+/////////////////////////////

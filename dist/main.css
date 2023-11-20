@@ -14,6 +14,7 @@ body {
   padding: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
+  position: relative;
 }
 body h1,
 body h2,
@@ -47,6 +48,125 @@ a {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  background-color: hsla(228, 71%, 99%, 0.98);
+}
+
+.card {
+  width: 730px;
+  height: 840px;
+  margin-top: 62px;
+  margin-bottom: 86px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 10px hsl(240, 7%, 92%);
+}
+.card__notificationsCount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card__notificationsCount .notifCount {
+  display: flex;
+  align-items: center;
+}
+.card__notificationsCount .notifCount h2 {
+  margin-bottom: 4px;
+}
+.card__notificationsCount .notifCount .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 24px;
+  margin-left: 15px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+}
+.card__notificationsCount button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  color: hsl(219, 12%, 42%);
+}
+.card__notification {
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 18px;
+  background-color: white;
+}
+.card__notification p {
+  margin-bottom: 0;
+  color: hsl(219, 12%, 42%);
+}
+.card__notification .avatar {
+  height: 45px;
+  margin-right: 20px;
+}
+.card__notification__notifData {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card__notification__notifData .whatHappenedBox .whatHappened .name {
+  margin-right: 3px;
+  font-weight: bold;
+  color: hsl(224, 21%, 14%);
+}
+.card__notification__notifData .whatHappenedBox .whatHappened .linkToClub {
+  color: hsl(219, 95%, 30%);
+  font-weight: bold;
+}
+.card__notification__notifData .whatHappenedBox .whatHappened .linkToMessage {
+  color: hsl(219, 12%, 42%);
+  font-weight: bold;
+}
+.card__notification__notifData .whatHappenedBox .whatHappened::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  border-radius: 8px;
+  background-color: hsl(1, 90%, 64%);
+}
+.card__notification__notifData .whatHappenedBox .whatHappened .read {
+  background-color: blue;
+}
+.card__notification__notifData .whatHappenedBox .whenHappened {
+  color: hsl(219, 14%, 63%);
+}
+.card__notification__notifData .linkImage {
+  height: 45px;
+}
+.card__notification__notifData .privateMessage {
+  height: 95px;
+  padding: 21px;
+  padding-top: 15px;
+  border: solid 1px hsl(205, 33%, 90%);
+}
+
+.new {
+  background-color: hsl(210, 60%, 98%);
+}
+.new .whatHappenedBox .whatHappened::after {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
