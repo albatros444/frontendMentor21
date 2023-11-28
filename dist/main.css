@@ -53,14 +53,15 @@ a {
 .background {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: hsla(228, 71%, 99%, 0.98);
+  height: 100vh;
 }
 
 .card {
   width: 730px;
   height: auto;
-  margin-top: 62px;
-  margin-bottom: 86px;
+  margin: 62px 10px 86px;
   padding: 32px;
   padding-top: 34px;
   padding-bottom: 0px;
@@ -212,8 +213,7 @@ a {
   }
   .background .card {
     width: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     padding: 24px 16px;
     border-radius: 0;
   }

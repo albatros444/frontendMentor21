@@ -4,14 +4,15 @@
 .background {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: hsl(228, 71%, 99%, 98%);
   // background-color: hsl(211, 68%, 94%);
+  height: 100vh;
 }
 .card {
   width: 730px;
   height: auto;
-  margin-top: 62px;
-  margin-bottom: 86px;
+  margin: 62px 10px 86px;
   padding: 32px;
   padding-top: 34px;
   padding-bottom: 0px;
