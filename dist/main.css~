@@ -50,6 +50,14 @@ a {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 500px) {
+  .background {
+    background-color: green;
+  }
+  .background .card {
+    margin-top: 0px;
+  }
+}
 .background {
   display: flex;
   justify-content: center;
@@ -80,7 +88,6 @@ a {
 .card__notificationsCount .notifCount h2 {
   margin-bottom: 1px;
   margin-left: 2px;
-  color: hsl(224, 21%, 14%);
 }
 .card__notificationsCount .notifCount .count {
   display: flex;
@@ -187,6 +194,7 @@ a {
 }
 .card__notification__notifData .privateMessage {
   margin-top: 12px;
+  height: 97px;
   margin-bottom: 3px;
   padding: 16px 19px;
   border-radius: 4px;
@@ -206,50 +214,4 @@ a {
   display: inline-block;
 }
 
-@media screen and (max-width: 500px) {
-  .background {
-    display: block;
-  }
-  .background .card {
-    width: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 24px 16px;
-    border-radius: 0;
-  }
-  .background .card__notificationsCount {
-    margin-bottom: 25px;
-  }
-  .background .card__notificationsCount .notifCount h2 {
-    font-size: 20px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-  .background .card__notificationsCount .notifCount .count {
-    margin-left: 10px;
-  }
-  .background .card__notificationsCount button {
-    font-size: 14px;
-  }
-  .background .card__notification {
-    padding: 15px;
-    font-size: 14px;
-  }
-  .background .card__notification .avatar {
-    height: 39px;
-    margin-right: 13px;
-  }
-  .background .card__notification__notifData .whatHappenedBox .whatHappened {
-    margin-bottom: 3px;
-    line-height: 1.3;
-  }
-  .background .card__notification__notifData .linkImage {
-    height: 39px;
-  }
-  .background .card__notification__notifData .privateMessage {
-    margin-bottom: 0px;
-    padding: 15px 15px;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css~.map */

@@ -28,6 +28,7 @@
       h2 {
         margin-bottom: 1px;
         margin-left: 2px;
+        color: hsl(224, 21%, 14%);
       }
       .count {
         display: flex;
@@ -139,7 +140,6 @@
 
       .privateMessage {
         margin-top: 12px;
-        height: 97px;
         margin-bottom: 3px;
         padding: 16px 19px;
         border-radius: 4px;
@@ -167,17 +167,4 @@
   }
 }
 
-//////////////////
-// Red: hsl(1, 90%, 64%)
-// Blue: hsl(219, 85%, 26%)
-
-// ### Neutral
-
-// - White: hsl(0, 0%, 100%)
-// - Very light grayish blue: hsl(210, 60%, 98%)
-// - Light grayish blue1: hsl(211, 68%, 94%)
-// - Light grayish blue2: hsl(205, 33%, 90%)
-// - Grayish blue: hsl(219, 14%, 63%)
-// - Dark grayish blue: hsl(219, 12%, 42%)
-// - Very dark blue: hsl(224, 21%, 14%)
-/////////////////////////////
+@import "mediaQs";
