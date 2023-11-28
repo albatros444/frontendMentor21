@@ -4,37 +4,42 @@
 .background {
   display: flex;
   justify-content: center;
-  background-color: hsl(228, 71, 99, 98%);
+  background-color: hsl(228, 71%, 99%, 98%);
+  // background-color: hsl(211, 68%, 94%);
 }
 .card {
   width: 730px;
-  height: 840px;
+  height: auto;
   margin-top: 62px;
   margin-bottom: 86px;
-  padding: 30px;
+  padding: 32px;
+  padding-top: 34px;
+  padding-bottom: 0px;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 0px 0px 10px hsl(240, 7%, 92%);
+  box-shadow: 0px 0px 30px hsl(240, 11%, 95%);
   &__notificationsCount {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 33px;
     .notifCount {
       display: flex;
       align-items: center;
       h2 {
-        margin-bottom: 4px;
+        margin-bottom: 1px;
+        margin-left: 2px;
       }
       .count {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 31px;
-        height: 24px;
-        margin-left: 15px;
+        height: 25px;
+        margin-left: 12px;
         padding-bottom: 2px;
-        border-radius: 5px;
-        background-color: hsl(219, 85%, 26%);
+        border-radius: 6px;
+        font-weight: bold;
+        background-color: hsl(219, 99%, 28%);
         color: white;
       }
     }
@@ -50,15 +55,22 @@
       text-decoration: none;
       background: none;
       color: hsl(219, 12%, 42%);
+      &:hover {
+        color: hsl(219, 85%, 30%);
+      }
     }
   }
   &__notification {
     display: flex;
-    margin-bottom: 10px;
-    border-radius: 6px;
+    margin-bottom: 12px;
+    border-radius: 7px;
     padding: 18px;
-    // background-color: hsl(210, 60%, 98%);
+    padding-top: 16px;
+    padding-bottom: 15px;
     background-color: white;
+    &:last-child {
+      margin-bottom: 0px;
+    }
     p {
       ////////all margin only inside notification
       margin-bottom: 0;
@@ -66,7 +78,7 @@
     }
     .avatar {
       height: 45px;
-      margin-right: 20px;
+      margin-right: 19px;
     }
     &__notifData {
       display: flex;
@@ -75,26 +87,34 @@
 
       .whatHappenedBox {
         .whatHappened {
+          margin-bottom: 1px;
+          line-height: 1.5;
           .name {
-            margin-right: 3px;
+            margin-right: 4px;
             font-weight: bold;
             color: hsl(224, 21%, 14%);
           }
           .linkToClub {
+            margin-left: 4px;
             color: hsl(219, 95%, 30%);
             font-weight: bold;
+            cursor: pointer;
           }
           .linkToMessage {
+            margin-left: 4px;
             color: hsl(219, 12%, 42%);
             font-weight: bold;
+            cursor: pointer;
+            &:hover {
+              color: hsl(219, 85%, 30%);
+            }
           }
           &::after {
             content: "";
-            // display: inline-block;
             display: none;
             width: 8px;
             height: 8px;
-            margin-left: 5px;
+            margin-left: 4px;
             margin-bottom: 1px;
             border-radius: 8px;
             background-color: hsl(1, 90%, 64%);
@@ -109,30 +129,35 @@
       }
       .linkImage {
         height: 45px;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          border-radius: 6px;
+          box-shadow: 0 0 4px hsl(219, 14%, 63%);
+        }
       }
 
       .privateMessage {
-        height: 95px;
-        padding: 21px;
-        padding-top: 15px;
+        margin-top: 12px;
+        height: 97px;
+        margin-bottom: 3px;
+        padding: 16px 19px;
+        border-radius: 4px;
+        cursor: pointer;
         border: solid 1px hsl(205, 33%, 90%);
+        transition: 0.13s ease-in-out;
+        &:hover {
+          background-color: hsl(211, 68%, 94%);
+        }
       }
     }
   }
 }
-// .read {
-//   background-color: white;
-//   .whatHappenedBox {
-//     .whatHappened {
-//       &::after {
-//         display: none;
-//       }
-//     }
-//   }
-// }
+
 .new {
   background-color: hsl(210, 60%, 98%);
-  //   background-color: green;
+  box-shadow: 0px 0px 3px hsl(225, 44%, 93%);
+
   .whatHappenedBox {
     .whatHappened {
       &::after {
